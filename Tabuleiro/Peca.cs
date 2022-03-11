@@ -1,4 +1,6 @@
-﻿namespace tabuleiro
+﻿using System;
+
+namespace tabuleiro
 {
     class Peca {
         public Posicao posicao { get; set; }
@@ -12,6 +14,11 @@
             this.tab = tab;
             this.cor = cor;
             this.qteMovimento = 0;
+        }
+
+        public void incrementarQteMovimentos()
+        {
+            qteMovimento++;
         }
     }
 }
